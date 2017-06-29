@@ -1,0 +1,4 @@
+export CONSUMER_KEY=<connected app consumer key>
+export JWT_KEY_FILE=<your server.key path>
+export HUB_USERNAME=<your Dev Hub username>
+

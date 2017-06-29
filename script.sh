@@ -1,0 +1,4 @@
+export CONSUMER_KEY=3MVG9zlTNB8o8BA31ZbcZGeTya2ThMW6s4QPMPG2imMsWduYpbVe9BwN41vUpjJrCdCMbeZPzfPlYBY4aXbsJ
+export JWT_KEY_FILE=/Users/pmui/dev/workspace/certificates/server.key
+export HUB_USERNAME=pmuister@gmail.com
+
