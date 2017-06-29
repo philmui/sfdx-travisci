@@ -3,6 +3,7 @@ dist: trusty
 cache: false
 env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_ac1b291d4076_key -iv $encrypted_ac1b291d4076_iv
   -in assets/server.key.enc -out assets/server.key -d
@@ -15,6 +16,7 @@ before_install:
 - sfdx update
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEY --jwtkeyfile assets/server.key
   --username $USERNAME --setdefaultdevhubusername -a HubOrg
+
 script:
 - sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a ciorg
 - sfdx force:source:push -u ciorg
